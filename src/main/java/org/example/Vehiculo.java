@@ -10,7 +10,7 @@ public class Vehiculo {
 
     double Velocidad;
 
-    Motor motor;
+    private Motor motor;
 
     public Vehiculo(String modeloVehiculo, String fabricante, Double cc, Integer ano, boolean sport, double velocidad, Motor motor) {
         this.modeloVehiculo = modeloVehiculo;
@@ -44,23 +44,6 @@ public class Vehiculo {
     public Vehiculo() {
     }
 
-    public Vehiculo(String modelo, String fabricante, Double cc, Integer ano, boolean sport, double velocidad) {
-        this.modeloVehiculo = modelo;
-        this.fabricante = fabricante;
-        this.cc = cc;
-        this.ano = ano;
-        this.sport = sport;
-        this.Velocidad = 0;
-    }
-
-    public Vehiculo(String modelo, String fabricante, Double cc, Integer ano, boolean sport) {
-        this.modeloVehiculo = modelo;
-        this.fabricante = fabricante;
-        this.cc = cc;
-        this.ano = ano;
-        this.sport = sport;
-
-    }
 
 
     // 3. metodos (comportamientos)

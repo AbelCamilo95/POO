@@ -10,7 +10,9 @@ public class Main {
 
         // Crear un objeto con el contructor con parametros
 
-        Vehiculo Fordfocus = new Vehiculo("Ford","Focus",2.1,2010,true);
+        Motor motorGTI = new Motor("gti",190,459.0,8);
+
+        Vehiculo Fordfocus = new Vehiculo("Ford","Focus",2.1,2010,true,0,motorGTI);
         System.out.println(Fordfocus.getFabricante());
         System.out.println(Fordfocus.getModeloVehiculo());
         Fordfocus.setFabricante("Mazda");
@@ -18,6 +20,7 @@ public class Main {
         System.out.println(Fordfocus.Velocidad);
         Fordfocus.acelerar(50);
         System.out.println(Fordfocus.Velocidad);
+        System.out.println(Fordfocus.getMotor().getModeloMotor());
 
 
     }
