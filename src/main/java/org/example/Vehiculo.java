@@ -1,16 +1,17 @@
 package org.example;
-
+//
+//Clase base o Superclase o clase padre
 public class Vehiculo {
     // 1. atrubutos
-    private String modeloVehiculo;
-    private String fabricante;
-    private Double cc;
-    private Integer ano;
-    private boolean sport;
+    protected String modeloVehiculo;
+    protected String fabricante;
+    protected Double cc;
+    protected Integer ano;
+    protected boolean sport;
 
-    double Velocidad;
+    protected double Velocidad;
 
-    private Motor motor;
+    protected Motor motor;
 
     public Vehiculo(String modeloVehiculo, String fabricante, Double cc, Integer ano, boolean sport, double velocidad, Motor motor) {
         this.modeloVehiculo = modeloVehiculo;

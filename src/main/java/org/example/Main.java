@@ -1,5 +1,9 @@
 package org.example;
 
+import org.example.Herencia.Camion;
+import org.example.Herencia.Coche;
+import org.example.Herencia.Motocicleta;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -22,6 +26,23 @@ public class Main {
         System.out.println(Fordfocus.Velocidad);
         System.out.println(Fordfocus.getMotor().getModeloMotor());
 
+        Motocicleta ninja = new Motocicleta();
+         ninja.fabricante = "";
+
+         // polimorfismo
+
+        Vehiculo vehiculo;
+
+        vehiculo = new Motocicleta();
+        vehiculo.acelerar(50);
+
+        vehiculo = new Coche();
+        vehiculo.acelerar(50);
+
+        vehiculo = new Camion();
+        vehiculo.acelerar(50);
+
+        // clases abstractas no se pueden instanciar. solo se instancian las clases hijas
 
     }
 }
